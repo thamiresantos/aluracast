@@ -1,0 +1,18 @@
+.secao-horizontal .cartao {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+}
+
+.secao-horizontal .cartao__imagem {
+    grid-column-start: 1; /*iniciar coluna*/
+    grid-column-end: 2; /*termina coluna*/
+    grid-row-start: 1; /*iniciar linha*/
+    grid-row-end: 4; /*termina linha*/
+    /* grid-area: 1/1/4/2;*/
+}
+
+.secao-horizontal .cartao__botao {
+    grid-column: 3/4; /* primeiro valor igual ao start e o segundo ao end*/
+    grid-row: 1/4
+} 

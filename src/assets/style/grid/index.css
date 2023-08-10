@@ -1,9 +1,9 @@
 body{
     display: grid;
     grid-template-areas:
-    "aside header"
-    "aside main";
-    grid-template-columns: auto 1fr;
+    "aside header" /* 1º linha */
+    "aside main"; /* 2º linha */
+    grid-template-columns: auto 1fr; /* com o valor "auto" o navergador calcular automaticamente a largura dessa coluna, ele vai utilizar como base o elemento que oculpa, nessa caso o proprio aside, a primeira coluna vai ter exatamente a mesmo largura do aside. a segunda vai ter 1fr= esta falando para o navegador que quer que tenha 1 fração de largura que sobrou do gred container*/
 }
 
 .cabecalho {
