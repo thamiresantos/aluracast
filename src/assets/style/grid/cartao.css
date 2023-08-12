@@ -1,6 +1,7 @@
 .secao-horizontal .cartao {
     display: grid;
     grid-template-columns: auto 1fr auto;
+    column-gap: 1.25rem;
 
 }
 
@@ -16,3 +17,12 @@
     grid-column: 3/4; /* primeiro valor igual ao start e o segundo ao end*/
     grid-row: 1/4
 } 
+
+.secao-horizontal .cartao__titulo {
+    align-self: flex-end;
+}
+
+.secao-vertical .cartao {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
